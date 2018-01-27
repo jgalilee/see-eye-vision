@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>See-Eye-Vision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./bundle.js"></script>
+</head>
+<body class="mdc-typography">
+    <header class="mdc-toolbar mdc-toolbar--fixed">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <span class="mdc-toolbar__title">See-Eye-Vision</span>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="mdc-toolbar-fixed-adjust">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__cell">
+                    <p>Welcome! you can change the website being displayed here.</p>
+                </div>
+            </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__cell">
+                    <div class="mdc-text-field mdc-text-field--fullwidth">
+                        <input id="url-input-field" class="mdc-text-field__input" type="text" placeholder="Please enter a URL" aria-label="Enter a new URL here" autocomplete="off" autocorrect="off" autocapitalize="none">
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__cell">
+                    <button id="url-update-button" class="mdc-button mdc-button--raised">Update</button>
+                    <button id="url-reset-button" class="mdc-button mdc-button--secondary mdc-button--raised">Reset</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

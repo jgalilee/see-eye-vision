@@ -1,0 +1,24 @@
+# Yaks
+
+[ ] Setup mocha for testing the application.
+[ ] Setup karma for testing the client application.
+[ ] Rebuild client with React.js.
+[ ] Add index.js for main folders.
+
+# Features
+
+[ ] Show the website URL to the client (update in realtime if it changes).
+[ ] Show feedback as a user enters a new website.
+[ ] Show how many clients are connected to the application.
+[ ] Add support to password protect the application.
+[ ] Add support to show a banner at the bottom of the screen.
+[ ] Add support to change the banner text from the client.
+[ ] Add support to change the colour scheme of the client and application banner.
+[ ] Add support to move the position of the QR code.
+[ ] Add support to show a ticker underneath the QR code and website.
+[ ] Add support for clients to post messages to the ticker.
+
+# Dreams
+
+[ ] Support the client being able to control the mouse from their device.
+    Note: attempted a prototype of this with robotjs but could not make the mouse move.

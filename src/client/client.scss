@@ -1,0 +1,6 @@
+@import "../../node_modules/material-components-web/dist/material-components-web.css";
+
+.mdc-button--secondary,
+.mdc-button--secondary:not(:disabled) {
+    background: #e4167d;
+}

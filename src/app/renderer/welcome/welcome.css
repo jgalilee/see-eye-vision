@@ -1,0 +1,17 @@
+.hero {
+    background: #6200ee;
+}
+
+.mdc-list-item__graphic {
+    color: #ffffff;
+    background-color: #6200ee;
+    margin-left: 0;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+li {
+    margin: 30px 0;
+}

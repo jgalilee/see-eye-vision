@@ -1,0 +1,3 @@
+{
+  "presets": ["jsdoc", "env"]
+}
