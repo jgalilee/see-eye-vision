@@ -6,16 +6,35 @@ Simple desktop application that supports remote control from a client applicatio
 displays a QR Code for the address of the application's embedded server.  The server uses websockets
 to support realtime interaction between the client and application.
 
+## Icon
+
+Icon made by Bogdan Russo from www.flaticon.com (CC 3.0 BY)[https://creativecommons.org/licenses/by/3.0/]
+
 ## Setup
 
 1. Clone this repository.
 2. Install node (if not already installed).
-3. Run `npm install`.
-4. Run `npm start`.
+3. Run `yarn install`.
+4. Run `yarn run start`.
 
-## Icon
+## Scripts
 
-Icon made by Bogdan Russo from www.flaticon.com (CC 3.0 BY)[https://creativecommons.org/licenses/by/3.0/]
+The following scripts can be executed using `yarn run` for convenience.
+
+* `start` - start the application in production mode.
+* `start:development` - start the application in development mode.
+* `start:debug` - start the application in debug mode (enable chrome developer tools for all browser views).
+* `start:doc` - start a dedicated server for the documentation created by `build:doc`.
+* `build` - build both the application and the client for packaging.
+* `build:app` - build only the application for packaging.
+* `build:client` - build only the client (using Webpack).
+* `build:doc` - build the documentation for all files in `./src/` using JSDoc3.
+* `package:app:linux:rpm64` - package the application for distribution on x64 rpm linux distros.
+* `clean` - delete both the app and client builds.
+* `clean:app` - delete only the app build.
+* `clean:client` - delete only the client build.
+* `test` - run all of the tests.
+* `lint` - run eslint and fix anything that can be fixed automatically.
 
 ## Licence
 
