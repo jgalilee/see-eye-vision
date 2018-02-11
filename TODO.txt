@@ -1,6 +1,6 @@
 # Yaks
 
-[ ] Setup mocha for testing the application.
+[x] Setup mocha for testing the application.
 [ ] Setup karma for testing the client application.
 [ ] Rebuild client with React.js.
 [ ] Add index.js for main folders.
