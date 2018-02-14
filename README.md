@@ -16,6 +16,7 @@ Icon made by Bogdan Russo from www.flaticon.com (CC 3.0 BY)[https://creativecomm
 2. Install node (if not already installed).
 3. Run `yarn install`.
 4. Run `yarn run start`.
+5. Run `yarn run electron-rebuild`.
 
 ## Scripts
 
