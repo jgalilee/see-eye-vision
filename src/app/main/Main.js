@@ -1,11 +1,11 @@
 /** @module app/Main */
 
-import url from 'url';
-import path from 'path';
-import {BrowserView} from 'electron';
+const url = require('url');
+const path = require('path');
+const {BrowserView} = require('electron');
 
 /** Wrapper around the Main view. */
-export default class Main {
+class Main {
     /**
      * Creates a new BrowserView with node integration, if none is provided.
      * If debug is set to true developer tools will be enabled on the view.
@@ -27,7 +27,7 @@ export default class Main {
         }
         this.resetURL();
         if (debug) {
-            this.view.webContents.toggleDevTools();
+            this.view.webContents.openDevTools();
         }
     }
 
@@ -85,3 +85,5 @@ export default class Main {
         this.view.webContents.send(...args);
     }
 }
+
+module.exports = Main;

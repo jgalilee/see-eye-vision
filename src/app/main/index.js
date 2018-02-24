@@ -1,1 +1,3 @@
-export {default as Main} from './Main';
+module.exports = {
+    Main: require('./Main'),
+};

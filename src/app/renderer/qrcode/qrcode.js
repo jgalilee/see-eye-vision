@@ -1,8 +1,6 @@
-require('babel-register');
-
 const {ipcRenderer} = require('electron');
-const {default: Renderer} = require('../Renderer');
-const {default: QRCode} = require('./lib/QRCode');
+const Renderer = require('../Renderer');
+const QRCode = require('./lib/QRCode');
 
 const widget = new Renderer('qrcode', ipcRenderer);
 

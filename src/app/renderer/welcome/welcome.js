@@ -1,8 +1,6 @@
-require('babel-register');
-
 const {ipcRenderer} = require('electron');
-const {default: Renderer} = require('../Renderer');
 const {withMaterialDesign} = require('../../../common');
+const Renderer = require('../Renderer');
 
 const widget = new Renderer('welcome', ipcRenderer, withMaterialDesign);
 

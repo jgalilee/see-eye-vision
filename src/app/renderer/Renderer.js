@@ -1,11 +1,11 @@
 /** @module app/Renderer */
-import {onDocumentReady} from '../../common';
+const {onDocumentReady} = require('../../common');
 
 /**
  * Wrapper around the Renderer IPC. It primarily acts as a buffer to messages
  * sent from the IPC before the Main IPC is ready.
  */
-export default class Renderer {
+class Renderer {
     /**
      * Creates the wrapper and when the document is ready sends any messages
      * that were sent / received before the document was ready.
@@ -97,3 +97,5 @@ export default class Renderer {
         }
     }
 }
+
+module.exports = Renderer;

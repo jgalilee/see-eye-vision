@@ -1,3 +1,6 @@
 {
-  "presets": ["jsdoc", "env"]
+  "presets": [
+	"jsdoc",
+	"env"
+  ]
 }

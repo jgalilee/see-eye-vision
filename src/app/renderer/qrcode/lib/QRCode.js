@@ -589,4 +589,4 @@ QRCode.prototype.clear = function () {
  */
 QRCode.CorrectLevel = QRErrorCorrectLevel;
 
-export default QRCode;
+module.exports = QRCode;

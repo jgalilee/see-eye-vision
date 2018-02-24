@@ -21,4 +21,4 @@ switch (config.env) {
         });
 }
 
-export default config;
+module.exports = config;

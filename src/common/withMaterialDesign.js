@@ -1,6 +1,6 @@
-import onDocumentReady from './onDocumentReady';
+const onDocumentReady = require('./onDocumentReady');
 
-export default (callback) => onDocumentReady(() => {
+module.exports = (callback) => onDocumentReady(() => {
     callback();
     mdc.autoInit();
 });

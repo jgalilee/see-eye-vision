@@ -1,8 +1,8 @@
 /** @module server/Server */
 
-import http from 'http';
-import express from 'express';
-import socket from 'socket.io';
+const http = require('http');
+const express = require('express');
+const socket = require('socket.io');
 
 /** Server is a wrapper class around an express server and socket.io */
 export default class Server {

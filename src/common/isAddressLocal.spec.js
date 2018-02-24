@@ -1,4 +1,4 @@
-import isAddressLocal from './isAddressLocal';
+const isAddressLocal = require('./isAddressLocal');
 
 describe('common', () => {
     describe('isAddressLocal', () => {

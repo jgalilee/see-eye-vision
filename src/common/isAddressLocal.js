@@ -1,1 +1,1 @@
-export default (a) => 'IPv4' === a.family && a.internal === false;
+module.exports = (a) => 'IPv4' === a.family && a.internal === false;

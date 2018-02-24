@@ -1,5 +1,5 @@
-import chai from 'chai';
-import mocha from 'mocha';
+const chai = require('chai');
+const mocha = require('mocha');
 
 // Define the value as a global accessible by the given key.
 const define = (object, key) => {

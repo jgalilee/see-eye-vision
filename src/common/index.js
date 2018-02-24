@@ -1,5 +1,7 @@
-export {default as isAddressRoutable} from './isAddressRoutable';
-export {default as isAddressLocal} from './isAddressLocal';
-export {default as getLocalAddresses} from './getLocalAddresses';
-export {default as onDocumentReady} from './onDocumentReady';
-export {default as withMaterialDesign} from './withMaterialDesign';
+module.exports = {
+    isAddressRoutable: require('./isAddressRoutable'),
+    isAddressLocal: require('./isAddressLocal'),
+    getLocalAddresses: require('./getLocalAddresses'),
+    onDocumentReady: require('./onDocumentReady'),
+    withMaterialDesign: require('./withMaterialDesign'),
+};

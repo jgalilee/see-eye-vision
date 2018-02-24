@@ -1,9 +1,9 @@
-import path from 'path';
-import {app, BrowserWindow, ipcMain} from 'electron';
-import {getLocalAddresses} from '../common';
-import {Server} from '../server';
-import {Main} from './main';
-import config from './config';
+const path = require('path');
+const {app, BrowserWindow, ipcMain} = require('electron');
+const {getLocalAddresses} = require('../common');
+const {Server} = require('../server');
+const {Main} = require('./main');
+const config = require('./config');
 
 let win;
 let view;

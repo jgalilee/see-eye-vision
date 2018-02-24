@@ -1,4 +1,4 @@
-import isAddressRoutable from './isAddressRoutable';
+const isAddressRoutable = require('./isAddressRoutable');
 
 describe('common', () => {
     describe('isAddressRoutable', () => {

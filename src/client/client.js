@@ -1,4 +1,4 @@
-import {withMaterialDesign} from '../common';
+const {withMaterialDesign} = require('../common');
 
 withMaterialDesign(() => {
     const socket = io(window.location.origin);

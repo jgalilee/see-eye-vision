@@ -14,13 +14,13 @@ Icon made by Bogdan Russo from www.flaticon.com (CC 3.0 BY)[https://creativecomm
 
 1. Clone this repository.
 2. Install node (if not already installed).
-3. Run `yarn install`.
-4. Run `yarn run start`.
-5. Run `yarn run electron-rebuild`.
+3. Run `npm install`.
+4. Run `npm run start`.
+5. Run `npm run electron-rebuild`.
 
 ## Scripts
 
-The following scripts can be executed using `yarn run` for convenience.
+The following scripts can be executed using `npm run` for convenience.
 
 * `start` - start the application in production mode.
 * `start:development` - start the application in development mode.
