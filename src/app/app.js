@@ -6,7 +6,7 @@ const {Main} = require('./main');
 const config = require('./config');
 
 let win;
-let view;
+let code;
 let welcome;
 let server;
 
@@ -21,9 +21,9 @@ app.on('ready', () => {
 
     welcome = new Main('welcome', win, config.debug);
 
-    view = new Main('qrcode', null, config.debug);
+    code = new Main('code', null, config.debug);
 
-    view.setParentWindow(win);
+    code.setParentWindow(win);
 
     server = new Server(path.join(__dirname, '../../dist', 'client'));
 
@@ -35,8 +35,8 @@ app.on('ready', () => {
         const [address] = getLocalAddresses(port);
         ipcMain.on('ready', () => {
             console.log('main: ipcMain ready');
-            welcome.send('addresses', {port, address});
-            view.send('url-change', `http://${address}:${port}/`);
+            welcome.send('server:address', {port, address});
+            code.send('server:code', `http://${address}:${port}/`);
         });
         console.log(`main: server listening on: ${address}:${port}`);
     });

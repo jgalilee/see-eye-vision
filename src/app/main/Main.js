@@ -41,12 +41,11 @@ class Main {
 
     /** Reset the wrapped view to display the original URL based on the id. */
     resetURL() {
-        const id = this.getId();
-        const idFile = `${this.getId()}.html`;
         this.view.webContents.loadURL(url.format({
-            pathname: path.join(__dirname, '../renderer', id, idFile),
+            pathname: path.join(__dirname, '../renderer', 'index.html'),
             protocol: 'file:',
             slashes: true,
+            hash: this.getId(),
         }));
     }
 

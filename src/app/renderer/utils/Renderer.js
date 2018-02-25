@@ -1,5 +1,5 @@
 /** @module app/Renderer */
-const {onDocumentReady} = require('../../common');
+const {onDocumentReady} = require('../../../common');
 
 /**
  * Wrapper around the Renderer IPC. It primarily acts as a buffer to messages

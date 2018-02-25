@@ -19,7 +19,7 @@ export default class Update extends React.Component {
     onReset() {
         socket.emit('reset');
     }
-    
+
     render() {
         return (
             <div>
