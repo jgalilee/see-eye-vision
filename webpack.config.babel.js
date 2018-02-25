@@ -5,16 +5,23 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 export default {
   entry: {
     client: [
-      './src/client/client.js',
-      './src/client/client.scss'
-    ]
+      './src/client/index.js',
+      './src/client/index.scss',
+    ],
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist', 'client')
+    path: path.resolve(__dirname, 'dist', 'client'),
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
@@ -25,41 +32,41 @@ export default {
               options: {
                 url: false,
                 minimize: true,
-                sourceMap: true
-              }
+                sourceMap: true,
+              },
             },
             {
               loader: 'sass-loader',
               options: {
-                sourceMap: true
-              }
-            }
-          ]
-        })
+                sourceMap: true,
+              },
+            },
+          ],
+        }),
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader'
-        ]
+          'file-loader',
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
-          'file-loader'
-        ]
-      }
-    ]
+          'file-loader',
+        ],
+      },
+    ],
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: 'assets.css'
+      filename: 'assets.css',
     }),
     new CopyWebpackPlugin([
       {
-        from: './src/client/client.html',
-        to: 'index.html'
-      }
-    ])
-  ]
+        from: './src/client/index.html',
+        to: 'index.html',
+      },
+    ]),
+  ],
 };
