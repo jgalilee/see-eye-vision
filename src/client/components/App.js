@@ -1,3 +1,5 @@
+/* eslint-disable max-len, require-jsdoc */
+
 import React from 'react';
 import Header from './Header';
 import Update from './Update';

@@ -1,5 +1,8 @@
 {
-    "extends": "google",
+    "extends": [
+        "google",
+        "plugin:react/recommended"
+    ],
     "parser": "babel-eslint",
     "globals": {
         "describe": true,
@@ -7,5 +10,8 @@
         "beforeEach": true,
         "afterEach": true,
         "expect": true
-    }
+    },
+    "plugins": [
+        "react"
+    ]
 }

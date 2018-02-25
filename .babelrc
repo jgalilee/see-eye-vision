@@ -1,3 +1,4 @@
 {
-  "presets": ["jsdoc", "env", "react"]
+  "presets": ["jsdoc", "env", "react"],
+  "plugins": ["transform-class-properties"]
 }

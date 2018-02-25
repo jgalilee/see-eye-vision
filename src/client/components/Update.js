@@ -1,3 +1,5 @@
+/* eslint-disable max-len, require-jsdoc */
+
 import React from 'react';
 
 export default class Update extends React.Component {

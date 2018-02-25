@@ -1,3 +1,5 @@
+/* eslint-disable max-len, require-jsdoc */
+
 import React from 'react';
 import QRCode from 'qrcode-react';
 import {ipcRenderer} from 'electron';

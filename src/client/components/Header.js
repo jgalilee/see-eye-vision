@@ -1,6 +1,13 @@
+/* eslint-disable max-len, require-jsdoc */
+
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Header extends React.Component {
+    static propTypes = {
+        children: PropTypes.element.isRequired,
+    }
+
     render() {
         return (
             <header className="mdc-toolbar mdc-toolbar--fixed">

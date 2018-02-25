@@ -1,3 +1,5 @@
+ /* eslint-disable max-len, require-jsdoc */
+
 import React from 'react';
 import {ipcRenderer} from 'electron';
 import Renderer from '../utils/Renderer';
@@ -40,7 +42,7 @@ export default class Welcome extends React.Component {
                                 </li>
                             </ul>
                             <p>
-                                Note: the server should be accessible from
+                                Note: the server should be accessible from&nbsp;
                                 <strong id="address">
                                     {this.state.address}
                                 </strong>
