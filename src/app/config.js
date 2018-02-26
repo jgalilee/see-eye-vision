@@ -5,6 +5,7 @@ let config = {
     backgroundColor: '#6200ee',
     env: process.env.NODE_ENV,
     debug: false,
+    port: process.env.PORT || '9090',
 };
 
 switch (config.env) {

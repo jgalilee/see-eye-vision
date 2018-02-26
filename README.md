@@ -10,6 +10,14 @@ to support realtime interaction between the client and application.
 
 Icon made by Bogdan Russo from www.flaticon.com (CC 3.0 BY)[https://creativecommons.org/licenses/by/3.0/]
 
+## Mouse support
+
+Mouse support is provided by robotjs which does not currently support Wayland display servers
+(https://github.com/octalmage/robotjs/issues/304).
+
+If you're using linux mouse support is currently provided for X11 and XOrg session, change your session
+to use XOrg.
+
 ## Setup
 
 1. Clone this repository.

@@ -1,6 +1,5 @@
 # Yaks
 
-[x] Setup mocha for testing the application.
 [ ] Setup karma for testing the client application.
 [ ] Rebuild client with React.js.
 [ ] Add index.js for main folders.
@@ -17,8 +16,9 @@
 [ ] Add support to move the position of the QR code.
 [ ] Add support to show a ticker underneath the QR code and website.
 [ ] Add support for clients to post messages to the ticker.
-
-# Dreams
-
-[ ] Support the client being able to control the mouse from their device.
-    Note: attempted a prototype of this with robotjs but could not make the mouse move.
+[ ] Add support to type emojis.
+[ ] Add support to drag while clicking with the left / right client mouse button.
+[ ] Add support to scroll from the client mouse.
+[ ] Add support to move the mouse relative to its last location.
+[x] Add pressureJS to support better mouse clicking and moving.
+[ ] Move the QR code to the other side of the screen if the mouse overlaps.

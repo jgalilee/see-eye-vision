@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 export default class Header extends React.Component {
     static propTypes = {
-        children: PropTypes.element.isRequired,
+        children: PropTypes.any,
     }
 
     render() {

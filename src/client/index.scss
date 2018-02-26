@@ -4,3 +4,22 @@
 .mdc-button--secondary:not(:disabled) {
     background: #e4167d;
 }
+
+#keyboard {
+    width: 100%;
+    height: 40px;
+    background: rgb(255, 0, 255);
+}
+
+#keyboard-input {
+    width:  0;
+    overflow: hidden;
+    position: fixed; left: 0; border: none; background: transparent;
+}
+
+#mouse-pad {
+    width: 100%;
+    height: 160px;
+    background: rgb(0, 255, 179);
+    touch-action: none;
+}
