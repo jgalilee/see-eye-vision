@@ -7,8 +7,8 @@
   "main": "./src/app/app.js",
   "scripts": {
     "start": "electron-forge start",
-    "start:development": "NODE_ENV=development electron -r babel-register .",
-    "start:debug": "NODE_ENV=debug electron -r babel-register .",
+    "start:development": "NODE_ENV=development electron-forge start",
+    "start:debug": "NODE_ENV=debug electron-forge start",
     "start:doc": "node-static ./doc -p 6060",
     "build": "npm run build:client && npm run build:app",
     "build:client": "webpack",
@@ -85,7 +85,9 @@
         "name": "see_eye_vision"
       },
       "electronInstallerDebian": {},
-      "electronInstallerRedhat": {},
+      "electronInstallerRedhat": {
+        "compressionLevel": 0
+      },
       "github_repository": {
         "owner": "",
         "name": ""
