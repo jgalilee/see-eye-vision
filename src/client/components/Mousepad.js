@@ -74,7 +74,7 @@ export default class Mousepad extends React.Component {
                     onTouchMove={(event) => this.onMousepadMove(event)}
                     onTouchStart={(event) => this.onMousepadDown(event)}
                     onTouchEnd={(event) => this.onMousepadUp(event)}>
-                    Mouse Pad
+                    Mousepad
                 </div>
             </div>
         );

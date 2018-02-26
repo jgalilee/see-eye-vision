@@ -5,21 +5,34 @@
     background: #e4167d;
 }
 
-#keyboard {
-    width: 100%;
-    height: 40px;
-    background: rgb(255, 0, 255);
-}
-
 #keyboard-input {
     width:  0;
     overflow: hidden;
-    position: fixed; left: 0; border: none; background: transparent;
+    position: fixed; left: 0;
+    border: none;
+    background: transparent;
+}
+
+#keyboard {
+    width: 100%;
+    height: 40px;
+    background: #e254ff;
+    color: #FFFFFF;
+    touch-action: none;
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
 }
 
 #mouse-pad {
     width: 100%;
     height: 160px;
-    background: rgb(0, 255, 179);
+    background:	#7200ca;
+    color: #FFFFFF;
     touch-action: none;
+    text-align: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 160px; 
 }
