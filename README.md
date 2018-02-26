@@ -35,10 +35,15 @@ The following scripts can be executed using `npm run` for convenience.
 * `start:debug` - start the application in debug mode (enable chrome developer tools for all browser views).
 * `start:doc` - start a dedicated server for the documentation created by `build:doc`.
 * `build` - build both the application and the client for packaging.
-* `build:app` - build only the application for packaging.
 * `build:client` - build only the client (using Webpack).
+* `build:app:linux` - build only the application for packaging on linux systems.
+* `build:app:win` - build only the application for packaging on windows systems.
+* `build:app:osx` - build only the application for packaging on osx darwin systems.
 * `build:doc` - build the documentation for all files in `./src/` using JSDoc3.
-* `package:app:linux:rpm64` - package the application for distribution on x64 rpm linux distros.
+* `package:linux:rpm` - package the application for disttribution on x64 linux debian distro systems.
+* `package:linux:deb` - package the application for disttribution on x64 linux redhat distro systems.
+* `package:windows:msi` - package the application for disttribution on x64 windows systems.
+* `package:osx:dmg` - package the application for disttribution on x64 osx darwin systems.
 * `clean` - delete both the app and client builds.
 * `clean:app` - delete only the app build.
 * `clean:client` - delete only the client build.
