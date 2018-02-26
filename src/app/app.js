@@ -38,14 +38,16 @@ app.on('ready', () => {
 
     server.on('reset', () => welcome.resetURL());
 
-    server.on('keypress', ({key, code}) => {
-        if (!code.startsWith('Key') && !code.startsWith('Digit')) {
-            try {
-                robot.keyTap(code.toLowerCase());
-                return;
-            } catch (ex) {
-                debug('not a special key: ', key, 'defaulting to typing');
+    server.on('keypress', ({key}) => {
+        try {
+            if (key.length > 1) {
+                robot.keyTap(key.toLowerCase());
+            } else {
+                robot.keyTap(key);
             }
+            return;
+        } catch (ex) {
+            debug('not a special key: ', key, 'defaulting to typing');
         }
         robot.typeString(key);
     });
